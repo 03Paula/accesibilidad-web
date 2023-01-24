@@ -17,15 +17,21 @@
 .font-verde-oscuro{
     color: #48C9B0;
 }
+
 a{
-    color: #48C9B0 ;
+    color: #0A4D3E ;
 }
 a:hover{
-    color: #6c757d ;
+    color: #298f80 ;
 }
 
-h3{
-    color: #48C9B0 ;
+h1{
+    color: #298f80;
+    margin-bottom: 40px;
+}
+
+h2,h3,h4,h5{
+    color: #0A4D3E ;
 }
 
 main img{
@@ -35,13 +41,19 @@ main img{
 section{
     margin: 40px 0px;
 }
+
+btn-secondary{
+    color: #48C9B0 ;
+    
+}
+
 /* CABECERA */
 header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #000000;
 }
 
 .cabecera-top{
@@ -53,7 +65,7 @@ header{
     padding: 5px 10px;
 }
 .cabecera-top a{
-    color: #fff;
+    color: #000000;
 }
 .cabecera-top > div{
     max-width: 200px;
@@ -72,9 +84,23 @@ header > a{
     justify-content: center;
     background: #E8F8F5;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+li {
+    display: inline;
+}
+
 .navbar-light .navbar-nav .nav-link{
     text-align: center;
 }
+
 
 .navbar-expand-lg .navbar-collapse{
     justify-content: center;
@@ -159,6 +185,7 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0px;
+    opacity: 0.6;
 }
 
 .donar-cabecera{
@@ -185,12 +212,19 @@ main{
 
 .donar-cabecera h1,
 .detalle-cabecera  h1{
-    color: #fff;
-    background: #48C9B0;
+    color: #000000;
+    background-color: #F8F9F9;
+    opacity: 1;
 }
 
+.texto__cabecera{
+    color: #000000;
+    background-color: #F8F9F9;
+    opacity: 1;
+    display: block;
+}
 .detalle-cabecera  h2, .detalle-cabecera span{
-    color: #fff;
+    color: #355332;
     width: 100%;
 }
 .detalle-cabecera button{
@@ -223,7 +257,9 @@ footer .pie h2, footer .pie a,footer .pie div{
 footer .rrss{
     border-bottom: solid thin #E5E7E9 ;
     padding-bottom: 20px;
+    margin-right: 20px;
 }
+
 footer .pie a.logo{
     border-top: solid thin #E5E7E9 ;
     padding-top: 20px;
@@ -254,11 +290,12 @@ footer.container-fluid{
     padding-right: 0px;
     padding-left: 0px;
 }
+
 .creditos{
-    background: #5A6268;
+    background: #48C9B0;
     margin-top: 30px;
     font-size: 0.65rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
 }
@@ -267,13 +304,18 @@ footer.container-fluid{
     margin: 0 auto;
 }
 .creditos a{
-    color: #48C9B0 ;
+    color: #172c28;
 }
 .creditos a:hover{
-    color: #007bff ;
+    color: #000000 ;
 }
 .creditos h6{
     font-size: 0.75rem;
+    color: #000000;
+}
+
+.creditos h5{
+    color: #000000;
 }
 
 .blockquote-footer{

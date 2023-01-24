@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!-- Añadimos el idioma -->
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Inicio · La Galería Ecléctica</title>
@@ -8,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<noscript>
+    No tienes activado JavaScript.
+</noscript>
 <header class="bg-verde-oscuro">
     <div class="cabecera-top">
         <div><a href="donar.html">Donaciones</a></div>
@@ -18,7 +22,7 @@
         </div>
     </div>
     <a href="index.html">
-        <img src="assets/img/logo.png"/>
+        <img src="assets/img/logo.png" alt="Logo de la página"/>
     </a>
     <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup">
@@ -26,10 +30,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">Colección</a>
-                <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a>
-                <a class="nav-item nav-link" href="#">Actividades</a>
-                <a class="nav-item nav-link" href="#">Revista</a>
+                <ul>
+                    <li><a class="nav-item nav-link" href="#">Colección</a></li>
+                    <li><a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a></li>
+                    <li><a class="nav-item nav-link" href="#">Actividades</a></li>
+                    <li><a class="nav-item nav-link" href="#">Revista</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -37,21 +43,27 @@
 
 <main class="container-fluid">
     <section class="exposiciones container">
+        <!-- Añadido h1 -->
+        <h1>La Galería Ecléctica</h1>
         <h2> Exposiciones actuales</h2>
         <div class="fila">
             <div class="dos-columnas">
                 <a href="expo-detalle.html">
-                    <img src="assets/img/expo-cezanne.jpg"/>
+                    <!-- Añadido alt -->
+                    <img src="assets/img/expo-cezanne.jpg" alt="" />
                 </a>
-                <a href="expo-detalle.html"><h3>Impresiones </h3></a>
-                <p>Hasta abril de 2019</p>
+                <a href="expo-detalle.html">
+                    <h3>Impresiones </h3>
+                </a>
+                <p>Hasta <time datetime="2019-04">abril de 2019</time></p>
             </div>
             <div class="dos-columnas">
                 <a href="#">
-                    <img src="assets/img/expo-caravaggio.jpg"/>
+                    <!-- Añadido alt -->
+                    <img src="assets/img/expo-caravaggio.jpg" alt="" />
                 </a>
                 <a href="#"> <h3>Caravaggio: el pintor del claroscuro </h3></a>
-                <p>Hasta mayo de 2019</p>
+                <p>Hasta <time datetime="2019-05">mayo de 2019</time></p>
             </div>
         </div>
     </section>
@@ -60,19 +72,28 @@
         <h2> Exposiciones actuales</h2>
         <div class="fila">
             <div class="tres-columnas">
-                <img src="assets/img/activ-guide.jpg"/>
+                <!-- Añadido alt -->
+                <img src="assets/img/activ-guide.jpg" alt="" />
                 <h3>Visita guiada a la colección de LAGaEC </h3>
-                <p>Jueves a las 12 h. Sábados a las 10 h. Actividad gratuita con inscripción previa</p>
+                <p>Jueves a las <time datetime="12:00"> 12 h</time>. Sábados a las <time datetime="10:00">10 h</time>. 
+                    Actividad gratuita con inscripción previa
+                </p>
             </div>
             <div class="tres-columnas">
-                <img src="assets/img/activ-arts.jpg"/>
+                <!-- Añadido alt -->
+                <img src="assets/img/activ-arts.jpg" alt="" />
                 <h3>Experiencias creativas </h3>
-                <p>Del 2 de enero al 25 de junio de 2019. Actividad gratuita con inscripción previa</p>
+                <p>Del <time datetime="2019-01-02">2 de enero</time> al <time datetime="2019-06-25">25 de junio</time> de 2019. 
+                    Actividad gratuita con inscripción previa
+                </p>
             </div>
             <div class="tres-columnas">
-                <img src="assets/img/activ-conf.jpg"/>
+                <!-- Añadido alt -->
+                <img src="assets/img/activ-conf.jpg" alt="" />
                 <h3>Cita con los expertos</h3>
-                <p>Del 7 de enero al 1 de julio de 2019 (cada primer lunes de mes). Conferencias gratuitas con inscripción previa</p>
+                <p>Del <time datetime="2019-01-07">7 de enero</time> al <time datetime="2019-07-1">1 de julio</time> de 2019 
+                    (cada primer lunes de mes). Conferencias gratuitas con inscripción previa
+                </p>
             </div>
         </div>
     </section>
@@ -83,15 +104,18 @@
             <div class="dos-columnas">
                 <h3>Horario</h3>
                 <ul>
-                    <li> Lunes, miércoles, jueves y viernes: 11 h a 19.30 h </li>
-                    <li>Sábados: 10 h a 20 h</li>
-                    <li> Domingos y festivos: 10 h a 15 h</li>
-                    <li> Martes no festivos: cerrado</li>
+                    <li>Lunes, miércoles, jueves y viernes: <time datetime="11:00">11</time> h a <time datetime="19:30">19.30</time> h</li>
+                    <li>Sábados: <time datetime="10:00">10</time> h a <time datetime="20:00">20</time> h</li>
+                    <li>Domingos y festivos: <time datetime="10:00">10</time> h a <time datetime="15:00"></time> h</li>
+                    <li>Martes no festivos: cerrado</li>
                 </ul>
                 <h3>Dirección</h3>
                 <p>
+                    <address>
+                        Plaza del Poblenou, 1<br>08018 Barcelona
+                    </address>
                     <a href="https://www.google.com/maps/place/Rambla+del+Poblenou,+1,+08005+Barcelona/@41.3975104,2.2034485,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a36b1db3ec85:0xbfaec3c0c8fd3ae2!8m2!3d41.3975104!4d2.2056372" target="_blank">
-                         Plaza del Poblenou, 1 <br>08018 Barcelona (ver mapa+)
+                        (ver mapa+)
                     </a>
                 </p>
 
@@ -99,10 +123,10 @@
             <div class="dos-columnas">
                 <h3>Precios</h3>
                 <p>Entrada: 10 €.
-                <span>Permite acceder a todas las exposiciones en curso tantas veces como se quiera durante un mes a partir de la fecha de compra. Es necesario activar la entrada. </span>
+                <span>Permite acceder a todas las exposiciones en curso tantas veces como se quiera durante un mes a partir de la fecha de compra. Es necesario activar la entrada.</span>
                 <p>
                 <p>Entrada reducida: 5 €.
-                <span>Para estudiantes y para mayores de 65 años. </span>
+                <span>Para estudiantes y para mayores de 65 años.</span>
             </p>
                 <p>Grupos: Consultar condiciones: <a href="mailto:reservas@lagaec.org">reservas@lagaec.org</a> </p>
                 <button class="btn btn-secondary">Comprar entradas</button>
@@ -115,29 +139,33 @@
     <div class="container pie">
         <h4>La Galería Ecléctica</h4>
         <a href="#">
-            Plaza del Poblenou, 1 <br>
-            08018 Barcelona
+            <address>
+                Plaza del Poblenou, 1<br>
+                08018 Barcelona
+            </address>
         </a>
         <div class="rrss">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square">Facebook</i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i>Youtube</a>
         </div>
 
         <form>
-            <h4>Suscríbete a nuestra Newsletter</h4>
+            <h4>Suscríbete a nuestra <span lang="en">Newsletter</span></h4>
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Enter email">
+                <!-- Añadimos la etiqueta label -->
+                <label for="email" id="email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter email">
             </div>
             <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input">
-                <label class="form-check-label">Acepto la <a href="#">Política de privacidad </a></label>
+                <input type="checkbox" name="politica-pivacidad" id="politica-pivacidad" class="form-check-input">
+                <label class="form-check-label" for="politica-privacidad" >Acepto la <a href="#">Política de privacidad </a></label>
             </div>
             <button type="submit" class="btn btn-secondary">Registrarme</button>
         </form>
         <a href="index.html" class="logo">
-            <img src="assets/img/logo.png"/>
+            <img src="assets/img/logo.png" alt="Logo de la página" />
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-verde-claro">
             <div class="navbar-nav">
@@ -150,12 +178,12 @@
 
     </div>
     <div class="creditos">
-        <h6>Créditos</h6>
-        <p>© LAGaEC. Imágenes de las obras artísticas de dominio público,
+        <h5>Créditos</h5>
+        <h6>© LAGaEC. Imágenes de las obras artísticas de dominio público,
             <a href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0">The Metropolitan Museum</a>.
             Fotografías, <a href="https://unsplash.com">Unsplash</a>
             Actividad para comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces Web.
-            IES Rafael Alberti - 2022/2023</p>
+            IES Rafael Alberti - <time datetime="2022-2023">2022/2023</time></h6>
     </div>
 
 </footer>

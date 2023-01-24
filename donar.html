@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!-- Añadimos el idioma -->
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <title>Donar · La Galería Ecléctica</title>
@@ -26,10 +27,12 @@
             </button>
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Colección </a>
-                    <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a>
-                    <a class="nav-item nav-link" href="#">Actividades</a>
-                    <a class="nav-item nav-link" href="#">Revista</a>
+                    <ul>
+                        <li><a class="nav-item nav-link" href="#">Colección </a></li>
+                        <li> <a class="nav-item nav-link" href="exposiciones.html">Exposiciones</a></li>
+                        <li><a class="nav-item nav-link" href="#">Actividades</a></li>
+                        <li><a class="nav-item nav-link" href="#">Revista</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -55,23 +58,19 @@
                         <p class="mb-0">
                             La protección y promoción de la diversidad cultural y natural es uno de los grandes desafíos del siglo XXI.
                             A este respecto, los museos y colecciones son medios primordiales para salvaguardar los testimonios materiales e
-                            inmateriales de la naturaleza y las culturas humanas. 
+                            inmateriales de la naturaleza y las culturas humanas.
                         </p>
-                        <footer class="blockquote-footer"> <cite>UNESCO, 17 de noviembre de 2015</cite></footer>
+                        <footer class="blockquote-footer"> <cite>UNESCO, <time datetime="2015-11-17">17 de noviembre de 2015</time></cite></footer>
                     </blockquote>
                 </div>
                 <div class="dos-tres-columnas">
-                    <p>
-
-
-                    </p>
 
                     <p>
                         LAGaEC tiene como objetivo la difusión de la cultura y se sostiene en base a donaciones de personas que comparten nuestro interés por las manifestaciones culturales de todo tipo.
                         Gracias por tu apoyo.
                     </p>
                     <form>
-                        <h3>Cantidad del donativo (EUR)</h3>
+                        <h2>Cantidad del donativo (EUR)</h2>
 
                         <div class="form-check-inline">
                             <input class="form-check-input" type="radio" name="unaVez" id="unaVez" value="option1" checked>
@@ -86,61 +85,60 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect2">Importe</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <label for="aportacion">Importe</label>
+                            <select multiple class="form-control" id="aportacion">
                                 <option>5€</option>
                                 <option>10€</option>
                                 <option>20€</option>
                                 <option>40€</option>
                                 <option>50€</option>
                                 <option>100€</option>
-
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Otra cantidad</label>
-                            <input type="password" class="form-control" placeholder="Escriba otro importe">
+                            <label for="otra-cantidad">Otra cantidad</label>
+                            <input type="password" name="otra-cantidad" class="form-control" placeholder="Escriba otro importe">
                         </div>
                         <hr>
-                        <h3>Datos de facturación</h3>
+                        <h2>Datos de facturación</h2>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Escribe tu email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Escribe tu email">
                             <small class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie.</small>
                         </div>
                         <div class="form-group">
-                            <label>Nombre </label>
-                            <input type="text" class="form-control" placeholder="Escribe tu nombre ">
+                            <label for="nombre">Nombre </label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre ">
                         </div>
                         <div class="form-group">
-                            <label>Apellidos </label>
-                            <input type="text" class="form-control" placeholder="Tu apellidos">
+                            <label for="apellidos">Apellidos </label>
+                            <input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Tu apellidos">
                         </div>
 
                         <div class="form-group">
-                            <label>Dirección postal </label>
-                            <input type="text" class="form-control" placeholder="Tu dirección postal">
+                            <label for="direccion">Dirección postal </label>
+                            <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Tu dirección postal">
                             <small class="form-text text-muted">Nunca compartiremos su dirección con nadie.</small>
                         </div>
 
                         <div class="form-group">
-                            <label>Teléfono </label>
-                            <input type="tel" class="form-control" placeholder="Teléfono">
+                            <label for="tef">Teléfono </label>
+                            <input type="tel" name="tef" id="tef" class="form-control" placeholder="Teléfono">
                             <small class="form-text text-muted">Nunca compartiremos su teléfono con nadie más.</small>
                         </div>
                         <hr>
-                        <h3>Datos de pago</h3>
+                        <h2>Datos de pago</h2>
                         <div class="form-group">
-                            <label>Número tarjeta</label>
-                            <input type="number" class="form-control" placeholder="Número de tarjeta">
+                            <label for="tarjeta">Número tarjeta</label>
+                            <input type="number" name="tarjeta" id="tarjeta" class="form-control" placeholder="Número de tarjeta">
                         </div>
                         <div class="form-group">
-                            <label>Data de expiración</label>
-                            <input type="text" class="form-control" placeholder="MM/AA">
+                            <label for="expiracion">Data de expiración</label>
+                            <input type="text" name="expiracion" id="expiracion" class="form-control" placeholder="MM/AA">
                         </div>
                         <div class="form-group">
-                            <label>Código de verificación</label>
-                            <input type="number" class="form-control" placeholder="CCV">
+                            <label for="verificacion">Código de verificación</label>
+                            <input type="number" name="verificacion" id="verificacion" class="form-control" placeholder="CCV">
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
@@ -148,7 +146,7 @@
                         </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input">
-                            <label class="custom-control-label">Acepto expresamente la <a href="#">política de protección de datos </a></label>
+                            <label class="custom-control-label">Acepto expresamente la <a href="#">política de protección de datos</a></label>
                         </div>
                         <button type="submit" class="btn btn-secondary">Enviar</button>
                     </form>
@@ -160,16 +158,16 @@
 
     <footer class="container-fluid">
         <div class="container pie">
-            <h4>La Galería Ecléctica</h4>
+            <h3>La Galería Ecléctica</h3>
             <a href="#">
-                Plaza del Poblenou, 1 <br>
+                Plaza del Poblenou, 1<br>
                 08018 Barcelona
             </a>
             <div class="rrss">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://es-es.facebook.com/"><i class="fab fa-facebook-square">Facebook</i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i>Twitter</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i>Youtube</a>
             </div>
 
             <form>
@@ -197,12 +195,12 @@
 
         </div>
         <div class="creditos">
-            <h6>Créditos</h6>
-            <p>© LAGaEC. Imágenes de las obras artísticas de dominio público,
+            <h5>Créditos</h5>
+            <h6>© LAGaEC. Imágenes de las obras artísticas de dominio público,
                 <a href="https://www.metmuseum.org/art/collection/search#!?searchField=All&showOnly=openAccess&sortBy=relevance&offset=0&pageSize=0">The Metropolitan Museum</a>.
                 Fotografías, <a href="https://unsplash.com">Unsplash</a>
                 Actividad para comprobar la Accesibilidad Web, para el módulo de Diseño de Interfaces Web.
-                IES Rafael Alberti - 2022/2023</p>
+                IES Rafael Alberti - <time datetime="2022-2023">2022/2023</time></h6>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
